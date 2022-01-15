@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600;700&display=swap');
+
+*
+{
+    font-family: 'Markazi Text', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+}
+*::selection
+{
+    background-color: #009d54;
+    color: #fff;
+}
+header
+{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 200px;
+}
+
+.logo
+{
+    color: #009d54;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navbar a
+{
+    color: #353b48;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-right: 30px;
+}
+.navbar a:hover
+{
+    color: #0be881;
+}
+
+section
+{
+    padding: 100px 200px;
+}
+
+.main
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #353b48;
+    /* background-attachment: fixed; */
+}
+
+.main .main_content h2
+{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main .main_content h2 span
+{
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #05c46b;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main .main_content h3
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn
+{
+    color: #353b48;
+    background-color: #05c46b;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.187em; /* * 16 = value*/
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.btn:hover
+{
+    background-color: #0be881;
+    transform: scale(1.1);
+}
+
+.social a
+{
+    color: #fff;
+    font-size: 1.7em;
+    padding-left: 30px;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    color: #29a46b;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .card
+{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0/*Top or Bottom*/ -5px /*right or left*/ 25px /* الأنتشار الظل */ rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+.icon
+{
+    color: #0be881;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info
+{
+    text-align: center;
+}
+
+.info h3
+{
+    color: #008547;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects
+{
+    background-color: #353b48;
+}
+
+.projects .content
+{
+    margin-top: 30px;
+}
+
+.pro_card
+{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 22em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.pro_card:hover
+{
+    transform: scale(1.1);
+}
+.pro_card:hover .pro_img
+{
+    opacity: 0.9;
+}
+
+.pro_img img
+{
+    width: 100%;
+}
+
+.pro_info
+{
+    padding: 1em;
+}
+
+.pro_category
+{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.pro_title
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more_details
+{
+    color: rgb(0 104 56);
+}
+
+.more_details:hover
+{
+    color: #0be881;
+}
+
+.contact .icon
+{
+    font-size: 4.5em;
+}
+
+.contact .info h3
+{
+    color: #000;
+}
+
+.contact .info p
+{
+    font-size: 1.5em;
+}
+
+.footer
+{
+    background-color: #353b48;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title
+{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer_title span
+{
+    color: #05c46b;
+}
+
+.footer .social a
+{
+    font-size: 1.3em;
+    padding: 0/*top*/ 0/*right*/ 0/*bottom*/ 12px/*Left*/;
+}
+
+@media (max-width: 1023px)
+{
+    header
+    {
+        padding: 12px 20px;
+    }
+    .navbar a
+    {
+        padding-right: 10px;
+    }
+
+    .title
+    {
+        font-size: 1.8em;
+    }
+
+    section
+    {
+        padding: 80px 20px;
+    }
+
+    .main_content h2
+    {
+        font-size: 1em;
+    }
+
+    .main_content h3
+    {
+        font-size: 1.6em;
+    }
+
+    .content
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 641px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+
+    .main_content h2
+    {
+        font-size: 1em;
+    }
+
+    .main_content h3
+    {
+        font-size: 1.4em;
+    }
+
+}
+
+@media (max-width: 300px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+}
